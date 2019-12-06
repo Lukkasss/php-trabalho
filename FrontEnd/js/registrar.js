@@ -16,7 +16,7 @@ function registrar(){
             return Promise.reject({ status: res.status, statusText: res.statusText });
         }
     })
-    .then((data) => console.log(data))
+    .then((data) => window.location.href = "http://localhost:8080/TrabalhoFinal/FrontEnd/index.html")
     .catch(err => console.log('Error message:', err.statusText));
 
 }
